@@ -1,0 +1,148 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background-color: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+
+    /* Flex para organizar toda la página */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #646464;
+}
+
+.logo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e50914;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* MAIN */
+.main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main h1 {
+    /* margin-top: 10px; */
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.main h1 img{
+    max-width: 100px;
+    margin: 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.main h1 img:hover {
+    border: 2px solid #dbdbdbcf;
+    box-shadow: 0 0 10px #ffffffbb;
+    transform: scale(1.05);
+}
+
+
+.info {
+    display: flex;
+    gap: 0px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.info-content {
+  flex: 1;
+  max-width: 1000px;
+  text-align: center;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-media {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.info-media img{
+    width: 100%;
+    padding: 10px;
+    border-radius: 60px;
+}
+
+.acerca-de {
+    background-color: #390251;
+    color: #d1d1aa;
+}
+
+.como-entro {
+    color: #d1d1aa;
+    background-color:#390251;
+}
+
+.canciones-solistas {
+    background-color: #390251;
+    color: #d1d1aa;
+}
+
+.su-musica {
+    color: #d1d1aa;
+    background-color: #390251;
+}
+
+.info-musica { /*Boton*/
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 25px;
+
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-top: 50px;
+}
+
+.info-musica:hover {
+    background-color: #0000007e;
+}
+
+
+
+/* FOOTER */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #646464;
+    padding: 20px;
+}
+
+.footer p {
+    font-weight: lighter;
+    font-size: 14px;
+    color: #aaa;
+}
