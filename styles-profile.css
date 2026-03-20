@@ -7,6 +7,7 @@
 
 /* BODY */
 body {
+    margin: 0px 20px;
     background-color: #000;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #fff;
@@ -63,15 +64,23 @@ body {
     transform: scale(1.05);
 }
 
-
-.info {
+ .info {
     display: flex;
     gap: 0px;
     margin: 20px auto;
     max-width: 1200px;
     border-radius: 50px;
     align-items: center;
+} 
+
+
+@media screen and (max-width: 768px) {
+    .info {
+        flex-direction: column; /* 🔥 AQUÍ VA */
+        padding: 20px;
+    }
 }
+
 
 .info-content {
   flex: 1;
@@ -93,6 +102,27 @@ body {
     width: 100%;
     padding: 10px;
     border-radius: 60px;
+}
+
+@media screen and (min-width: 769px) {
+    .info-media img{
+        max-width: 550px;
+        padding: 10px;
+        border-radius: 60px;
+    }
+}
+
+.info-media img::before{
+    position: absolute;
+    content: "";
+    width: calc(100% - 12rem);
+    height: calc(100% - 12rem);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3rem solid rgba(0, 0, 0, .5);
+    border-radius: 300px;
+    z-index: 1;
 }
 
 .acerca-de {

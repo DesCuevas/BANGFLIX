@@ -43,6 +43,7 @@ body {
     justify-content: center;
 
     text-align: center;
+    margin: 15px;
 }
 
 .main h1 {
@@ -52,7 +53,9 @@ body {
 
 /* GRID DE PERFILES */
 .profiles {
-    display: grid;
+    display: flex;
+    max-width: 50%;
+    flex-wrap: wrap;
     grid-template-columns: repeat(4, 150px);
     gap: 30px;
     justify-content: center;
